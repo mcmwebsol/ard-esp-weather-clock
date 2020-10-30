@@ -445,11 +445,12 @@ void printMessage() {
   } 
 
   // add time (hours and minutes) and tempNowInt and weatherNowChar to message
-  sprintf(message, "%d:%s%d%c",
+  sprintf(message, "%d:%s%c%d",
                             hours,
                             minutesRealDisplay, 
-                            tempNowInt,
-                            weatherNowChar);
+                            weatherNowChar,
+                            tempNowInt
+                            );
   Serial.println(message);
   printText(0, MAX_DEVICES-1, message); 
   
