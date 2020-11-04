@@ -9,6 +9,8 @@ Clock (NTP) code based on https://lastminuteengineers.com/esp8266-ntp-server-dat
 
 Obtain an Open Weather Map API key at https://home.openweathermap.org/users/sign_up
 
+To display the temperature in Celsius instead of Fahrenheit change "units=imperial" to "units=metric" on line 513
+
 Tested with ESP8266 and MAX7219 4 8x8 Dot Matrix Module - LED 
 
 Built with the Arduino IDE
