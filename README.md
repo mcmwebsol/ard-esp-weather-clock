@@ -11,6 +11,9 @@ Obtain an Open Weather Map API key at https://home.openweathermap.org/users/sign
 
 To display the temperature in Celsius instead of Fahrenheit change "units=imperial" to "units=metric" on line 513
 
+If you are not on US Central Time, change the offset in line 320 to the appropriate one for your time zone
+const long utcOffsetInSeconds = -6 * 3600; 
+
 Tested with ESP8266 and MAX7219 4 8x8 Dot Matrix Module - LED 
 
 Built with the Arduino IDE
