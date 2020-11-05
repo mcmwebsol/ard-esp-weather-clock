@@ -82,7 +82,7 @@ MD_MAX72XX::fontType_t newFont[] PROGMEM =
   0,  // 42   
   5, 96, 144, 144, 96, 0,   // 43    
   0,  // 44   
-  0,  // 45   
+  1, 16,  // 45   
   0,  // 46   
   0,  // 47   
   3, 254, 130, 254,   // 48    
@@ -317,7 +317,7 @@ const char *ssid = SSIDW;
 String apiKey = API_KEY; 
 
 
-const long utcOffsetInSeconds = -5 * 3600; // US Central Time (not daylight savings though??)
+const long utcOffsetInSeconds = -6 * 3600; // US Central Time (not daylight savings though??)
 
 WiFiClient client;
 // Open Weather Map API server name
@@ -510,7 +510,7 @@ void makehttpRequest() {
     Serial.println("connecting to server..");
     //Serial.println("relURL=/data/2.5/weather?lat=36.623462&lon=-87.3825136&units=imperial&appid=" + apiKey + "&mode=json HTTP/1.1");
     // send the HTTP GET request:
-    client.println("GET /data/2.5/weather?lat=36.623462&lon=-87.3825136&units=imperial&appid=" + apiKey + "&mode=json HTTP/1.1");
+    client.println("GET /data/2.5/weather?lat=36.623462&lon=-87.3825136&units=imperial&appid=" + apiKey + "&mode=json HTTP/1.1"); // To display the temperature in Celsius instead of Fahrenheit change "units=imperial" to "units=metric" here
     //Serial.println("break A");
     client.println("Host: api.openweathermap.org");
     //Serial.println("break B");
