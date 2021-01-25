@@ -1,6 +1,10 @@
 # ard-esp-weather-clock
 Clock with Weather for ESP8266/Arduino with MD_MAX72xx for display
 
+NOT INTENDED FOR SEVERE WEATHER NOTIFICATIONS!  
+
+NO WARRANTY - SEE LICENSE!
+
 It displays the current time in 24 hour format followed by the temperature in fahrenheit and the current weather condition as an icon.
 
 Weather code based on https://randomnerdtutorials.com/esp8266-weather-forecaster/
